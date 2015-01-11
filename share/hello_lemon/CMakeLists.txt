@@ -1,4 +1,4 @@
-set (APP_NAME hello-lemon)
+set (APP_NAME hello_lemon)
 
 file (GLOB SRCS *.cpp)
 file (GLOB HDRS *.h)

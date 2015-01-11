@@ -52,7 +52,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PLAN_LIB_DIR} CACHE PATH
 ## then you must tell its location in the LEMON_ROOT_DIR CMAKE config
 ## variable. (Do not hard code it into your config! Others may keep
 ## LEMON at different places.)
-#set(LEMON_SOURCE_ROOT_DIR "CMAKE_SOURCE_DIR/third-party-build/lemon-1.3")
+set(LEMON_SOURCE_ROOT_DIR "${CMAKE_SOURCE_DIR}/third-party-build/lemon-1.3")
 
 FIND_PATH(LEMON_SOURCE_ROOT_DIR CMakeLists.txt
   PATHS ${CMAKE_SOURCE_DIR}/lemon ${CMAKE_SOURCE_DIR}/deps/lemon
@@ -104,3 +104,5 @@ foreach(I ${INCLUDE_FILES})
 endforeach()
 
 add_subdirectory(src)
+add_subdirectory(share)
+
